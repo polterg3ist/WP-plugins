@@ -1,0 +1,160 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+a{
+    text-decoration: none;
+    color: #489DFF;
+}
+.header{
+    max-height: 80px;
+
+}
+
+.header_content{
+    padding: 19px;
+    text-align: center;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+}
+
+
+.plugins_content{
+    border-bottom: 1px solid #F3F3F3;
+    padding-top: 20px;
+    padding-bottom: 26px;
+
+}
+
+.plugins_title{
+    font-size: 1.875rem;
+    height: 48px;
+}
+
+.plugins_items{
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+}
+
+.plugins_items.item{
+    padding: 32px 8px 16px 8px;
+}
+
+.item img{
+    border-radius: 7px;
+    box-shadow: 3px 4px 44px 0 rgba(0, 0, 0, 0.03);
+    height: 260px;
+    width: 260px;
+    background-color:  lightgray;
+}
+
+.item h2{
+    padding-top: 9px;
+    font-size: 1.25rem;
+}
+
+.item  p{
+    font-size: 0.9375rem;
+    padding: 1px 2px;
+    font-weight: 500;
+    color: #489DFF;
+    line-height: 24px;
+}
+
+.item button{
+    height: 3rem;
+    padding: 1rem 3.12rem;
+    color: #FFF;
+    background-color: #489DFF;
+    border-radius: 7px;
+    border-color: transparent;
+    font-family: sans-serif Montserrat;
+    font-weight: 700;
+    line-height: 1.06;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #525F7F;
+    line-height: 1.66;
+}
+
+.footer_link{
+    padding: 20px 0;
+}
+
+.footer_img_link{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    margin: 0 auto;
+}
+
+@media (max-width: 583px){
+    html{
+        font-size: 14px;
+    }
+    .plugins_title {
+        text-align: center;
+        height: 100%;
+        padding-bottom: 1.5vh;
+    }
+    .plugins_items {
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .plugins_items img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    html{
+        font-size: 12px;
+    }
+
+    .item button{
+        padding: 0 3.12rem;
+    }
+}
+
+@media (max-width: 320px) {
+    html{
+        font-size: 11px;
+    }
+}
+
+.grayscale { filter: grayscale(90%); }
